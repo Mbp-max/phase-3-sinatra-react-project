@@ -7,7 +7,8 @@ class TasksController < ApplicationController
         tasks.to_json(include: :team)
     end
     post "/tasks" do
-        binding.pry
+        task = Task.create(params)
+        task.to_json(include: :employee)
     end
 
     patch "/tasks/:id" do

@@ -1,10 +1,10 @@
 puts "🌱 Seeding spices..."
 
 puts "Creating teams..."
-Team.create(name: "Google")
-Team.create(name: "Facebook")
-Team.create(name: "Dunder Mifflin")
-Team.create(name: "Enron")
+Team.create(name: "Accounts")
+Team.create(name: "Client Services")
+Team.create(name: "Human Resources")
+Team.create(name: "Internal IT")
 
 puts "Creating employees..."
 Employee.create(name: Faker::Name.name, username: "employee1", password: "employee2")
